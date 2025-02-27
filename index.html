@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Game</title>
+    <style>
+        body { margin: 0; overflow: hidden; text-align: center; }
+        canvas { background: green; display: block; margin: auto; }
+        #celebration-menu { display: none; position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%); background: white; padding: 10px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="celebration-menu">
+        <p>Choose Celebration:</p>
+        <button onclick="playCelebration('griddy')">Griddy</button>
+        <button onclick="playCelebration('siii')">Siii</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
